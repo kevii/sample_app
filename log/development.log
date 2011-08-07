@@ -663,3 +663,45 @@ Processing PagesController#home (for 127.0.0.1 at 2011-08-07 04:10:03) [GET]
 Rendering template within layouts/application
 Rendering pages/home
 Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-07 19:52:45) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 118ms (View: 117, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-07 19:53:31) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-07 19:53:34) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-07 19:54:02) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-07 23:35:51) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 258ms (View: 256, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-07 23:35:51) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 00:53:13) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
