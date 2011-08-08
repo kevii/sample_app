@@ -1395,3 +1395,500 @@ Rendered layouts/_stylesheets (0.3ms)
 Rendered layouts/_header (0.3ms)
 Rendered layouts/_footer (0.1ms)
 Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2011-08-09 00:29:30) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.7ms)
+
+
+Processing PagesController#about (for 0.0.0.0 at 2011-08-09 00:29:30) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2011-08-09 00:29:30) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2011-08-09 00:29:30) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+
+
+Processing PagesController#home (for 0.0.0.0 at 2011-08-09 00:29:30) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+
+
+Processing PagesController#home (for 0.0.0.0 at 2011-08-09 00:29:30) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.3ms)
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-09 00:29:30) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-09 00:29:30) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-09 00:29:30) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+
+ActionView::TemplateError (undefined local variable or method `root_path' for #<ActionView::Base:0x7fbea17c0da0>) on line #5 of app/views/layouts/_header.html.erb:
+2:   <% logo = image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+3:   <%= link_to logo, '/' %>
+4:   <ul class="navigation round">
+5:     <li><%= link_to "Home", root_path %></li>
+6:     <li><%= link_to "Help", '/help' %></li>
+7:     <li><%= link_to "Sign in", '#' %></li>
+8:   </ul>
+
+    app/views/layouts/_header.html.erb:5
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:17:in `render_partial'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    app/views/layouts/application.html.erb:10
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    spec/integration/layout_links_spec.rb:5
+    rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `execute'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/bin/spec:19:in `load'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/bin/spec:19
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2011-08-09 00:29:30) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+
+ActionView::TemplateError (undefined local variable or method `root_path' for #<ActionView::Base:0x7fbea1830380>) on line #5 of app/views/layouts/_header.html.erb:
+2:   <% logo = image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+3:   <%= link_to logo, '/' %>
+4:   <ul class="navigation round">
+5:     <li><%= link_to "Home", root_path %></li>
+6:     <li><%= link_to "Help", '/help' %></li>
+7:     <li><%= link_to "Sign in", '#' %></li>
+8:   </ul>
+
+    app/views/layouts/_header.html.erb:5
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:17:in `render_partial'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    app/views/layouts/application.html.erb:10
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    spec/integration/layout_links_spec.rb:10
+    rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `execute'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/bin/spec:19:in `load'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/bin/spec:19
+
+Rendered rescues/_trace (48.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2011-08-09 00:29:30) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+
+ActionView::TemplateError (undefined local variable or method `root_path' for #<ActionView::Base:0x7fbea18662a0>) on line #5 of app/views/layouts/_header.html.erb:
+2:   <% logo = image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+3:   <%= link_to logo, '/' %>
+4:   <ul class="navigation round">
+5:     <li><%= link_to "Home", root_path %></li>
+6:     <li><%= link_to "Help", '/help' %></li>
+7:     <li><%= link_to "Sign in", '#' %></li>
+8:   </ul>
+
+    app/views/layouts/_header.html.erb:5
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:17:in `render_partial'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    app/views/layouts/application.html.erb:10
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    spec/integration/layout_links_spec.rb:15
+    rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `execute'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/bin/spec:19:in `load'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/bin/spec:19
+
+Rendered rescues/_trace (48.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2011-08-09 00:29:31) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.6ms)
+
+ActionView::TemplateError (undefined local variable or method `root_path' for #<ActionView::Base:0x7fbea186da00>) on line #5 of app/views/layouts/_header.html.erb:
+2:   <% logo = image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+3:   <%= link_to logo, '/' %>
+4:   <ul class="navigation round">
+5:     <li><%= link_to "Home", root_path %></li>
+6:     <li><%= link_to "Help", '/help' %></li>
+7:     <li><%= link_to "Sign in", '#' %></li>
+8:   </ul>
+
+    app/views/layouts/_header.html.erb:5
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:17:in `render_partial'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    app/views/layouts/application.html.erb:10
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    spec/integration/layout_links_spec.rb:20
+    rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `execute'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/bin/spec:19:in `load'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/bin/spec:19
+
+Rendered rescues/_trace (48.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-08-09 00:29:31) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+
+ActionView::TemplateError (undefined local variable or method `root_path' for #<ActionView::Base:0x7fbea1893958>) on line #5 of app/views/layouts/_header.html.erb:
+2:   <% logo = image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+3:   <%= link_to logo, '/' %>
+4:   <ul class="navigation round">
+5:     <li><%= link_to "Home", root_path %></li>
+6:     <li><%= link_to "Help", '/help' %></li>
+7:     <li><%= link_to "Sign in", '#' %></li>
+8:   </ul>
+
+    app/views/layouts/_header.html.erb:5
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:17:in `render_partial'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    app/views/layouts/application.html.erb:10
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rspec-rails-1.3.2/lib/spec/rails/extensions/action_view/base.rb:27:in `render'
+    spec/integration/layout_links_spec.rb:25
+    rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `instance_eval'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:40:in `execute'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/timeout.rb:53:in `timeout'
+    rspec (1.3.0) lib/spec/example/example_methods.rb:37:in `execute'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:214:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `each'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:212:in `run_examples'
+    rspec (1.3.0) lib/spec/example/example_group_methods.rb:103:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:23:in `run'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `each'
+    rspec (1.3.0) lib/spec/runner/example_group_runner.rb:22:in `run'
+    rspec (1.3.0) lib/spec/runner/options.rb:152:in `run_examples'
+    rspec (1.3.0) lib/spec/runner/command_line.rb:9:in `run'
+    rspec (1.3.0) bin/spec:5
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/bin/spec:19:in `load'
+    /home/kevin/.rvm/gems/ruby-1.8.7-p352/bin/spec:19
+
+Rendered rescues/_trace (107.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#about (for 0.0.0.0 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.6ms)
+Rendered layouts/_header (10.1ms)
+Rendered layouts/_footer (0.9ms)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 51ms (View: 49, DB: 0) | 200 OK [http://test.host/signup]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/signup]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/help]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-08-09 00:34:21) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (1.3ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/signup]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (4.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#about (for 0.0.0.0 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/about]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#contact (for 0.0.0.0 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/contact]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing PagesController#home (for 0.0.0.0 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (46.8ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 51ms (View: 49, DB: 0) | 200 OK [http://test.host/signup]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/signup]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/help]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-08-09 00:39:08) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/signup]
