@@ -705,3 +705,795 @@ Processing PagesController#home (for 127.0.0.1 at 2011-08-08 00:53:13) [GET]
 Rendering template within layouts/application
 Rendering pages/home
 Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 03:44:36) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 70ms (View: 69, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 03:44:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 03:45:08) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+ERROR: compiling _run_erb_app47views47layouts47application46html46erb RAISED compile error
+/home/kevin/Applications/rails2/sample_app/app/views/layouts/application.html.erb:8: syntax error, unexpected $undefined, expecting kEND
+; @= stylesheet_link_tag 'custom'...
+   ^
+Function body:           def _run_erb_app47views47layouts47application46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n  \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">\n  <head>\n    <title>"
+
+
+
+; @output_buffer.concat(( title ).to_s); @output_buffer.concat "</title>\n    "
+; @output_buffer.concat(( stylesheet_link_tag 'blueprint/screen', :media => 'screen' ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( stylesheet_link_tag 'blueprint/print', :media => 'print' ).to_s); @output_buffer.concat "\n    "
+; @= stylesheet_link_tag 'custom', :media => 'screen' ; @output_buffer.concat "\n  </head>\n  <body>\n    <div class=\"container\">\n       <div id=\"header\">\n\t "
+
+
+
+
+; @output_buffer.concat(( image_tag("logo.png", :alt => "Sample App", :class => "round") ).to_s); @output_buffer.concat "\n         <ul class=\"navigation round\">\n   \t   <li>"
+
+; @output_buffer.concat(( link_to "Home", '#' ).to_s); @output_buffer.concat "</li>\n\t   <li>"
+; @output_buffer.concat(( link_to "Help", '#' ).to_s); @output_buffer.concat "</li>\n           <li>"
+; @output_buffer.concat(( link_to "Sign in", '#' ).to_s); @output_buffer.concat "</li>\n\t </ul>\n       </div>\n       <div id=\"content\" class=\"round\">\n         "
+
+
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n       </div>\n     </div>\n  </body>\n</html>\n\n"
+
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/kevin/Applications/rails2/sample_app/app/views/layouts/application.html.erb:30:in `compile!'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_view/base.rb:352:in `_render_with_layout'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rack-1.0.1/lib/rack/handler/webrick.rb:14:in `run'
+/home/kevin/.rvm/gems/ruby-1.8.7-p352/gems/rails-2.3.5/lib/commands/server.rb:111
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/kevin/Applications/rails2/sample_app/app/views/layouts/application.html.erb:8: syntax error, unexpected $undefined, expecting kEND
+; @= stylesheet_link_tag 'custom'...
+   ^) on line #8 of app/views/layouts/application.html.erb:
+5:     <title><%= title %></title>
+6:     <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+7:     <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+8:     <%@= stylesheet_link_tag 'custom', :media => 'screen' %>
+9:   </head>
+10:   <body>
+11:     <div class="container">
+
+    app/views/layouts/application.html.erb:30:in `compile!'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.8ms)
+Rendered rescues/_request_and_response (10.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 03:45:26) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 03:45:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/custom.css" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 03:45:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 03:48:24) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 03:48:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/custom.css" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 03:48:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 03:55:14) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 03:55:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/custom.css" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 03:55:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 03:55:54) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 03:55:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/custom.css" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 04:14:41) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 04:17:44) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 69ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 04:18:18) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 04:20:10) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 04:23:39) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 05:00:49) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_footer (1.0ms)
+Completed in 98ms (View: 96, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 05:02:46) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 163.221.126.243 at 2011-08-08 06:10:00) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_footer (0.3ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://163.221.126.243/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 18:07:12) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+
+ActionView::TemplateError (Missing layout layouts/_stylesheets.erb in view path app/views) on line #6 of app/views/layouts/application.html.erb:
+3: <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+4:   <head>
+5:     <title><%= title %></title>
+6:     <%= render 'layouts/stylesheets'%>
+7:   </head>
+8:   <body>
+9:     <div class="container">
+
+    app/views/layouts/application.html.erb:6
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 18:07:51) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_footer (22.6ms)
+Completed in 33ms (View: 32, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 18:11:44) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+
+ActionView::TemplateError (Missing layout layouts/_header.erb in view path app/views) on line #10 of app/views/layouts/application.html.erb:
+7:   </head>
+8:   <body>
+9:     <div class="container">
+10:        <%= render 'layouts/header' %>
+11:        <div id="content" class="round">
+12:          <%= yield %>
+13:        </div>
+
+    app/views/layouts/application.html.erb:10
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 18:13:01) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 52ms (View: 50, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 18:16:42) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 18:16:45) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#hje (for 127.0.0.1 at 2011-08-08 18:16:45) [GET]
+
+ActionController::UnknownAction (No action responded to hje. Actions: about, contact, help, and home):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#h (for 127.0.0.1 at 2011-08-08 18:16:46) [GET]
+
+ActionController::UnknownAction (No action responded to h. Actions: about, contact, help, and home):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2011-08-08 18:16:46) [GET]
+
+ActionView::MissingTemplate (Missing template pages/help.erb in view path app/views):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2011-08-08 18:17:20) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2011-08-08 18:17:49) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 29ms (View: 27, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 18:18:01) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#he (for 127.0.0.1 at 2011-08-08 18:18:06) [GET]
+
+ActionController::UnknownAction (No action responded to he. Actions: about, contact, help, and home):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#help (for 127.0.0.1 at 2011-08-08 18:18:06) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2011-08-08 18:18:10) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#c (for 127.0.0.1 at 2011-08-08 18:18:16) [GET]
+
+ActionController::UnknownAction (No action responded to c. Actions: about, contact, help, and home):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#conta (for 127.0.0.1 at 2011-08-08 18:18:17) [GET]
+
+ActionController::UnknownAction (No action responded to conta. Actions: about, contact, help, and home):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contac (for 127.0.0.1 at 2011-08-08 18:18:17) [GET]
+
+ActionController::UnknownAction (No action responded to contac. Actions: about, contact, help, and home):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2011-08-08 18:18:17) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 37ms (View: 35, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2011-08-08 18:27:01) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#index (for 127.0.0.1 at 2011-08-08 18:27:06) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: about, contact, help, and home):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 18:27:07) [GET]
+
+ActionController::RoutingError (No route matches "/p" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 18:27:08) [GET]
+
+ActionController::RoutingError (No route matches "/c" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 18:27:08) [GET]
+
+ActionController::RoutingError (No route matches "/con" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 18:27:08) [GET]
+
+ActionController::RoutingError (No route matches "/cont" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 18:27:09) [GET]
+
+ActionController::RoutingError (No route matches "/contac" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2011-08-08 18:27:09) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-08-08 18:27:38) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-08 23:10:47) [GET]
+
+ActionController::RoutingError (No route matches "/a" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PagesController#about (for 127.0.0.1 at 2011-08-08 23:10:48) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2011-08-08 23:12:43) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/about]
