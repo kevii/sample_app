@@ -3166,3 +3166,329 @@ Rendered layouts/_stylesheets (0.4ms)
 Rendered layouts/_header (0.3ms)
 Rendered layouts/_footer (0.1ms)
 Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:26:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (6.6ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 30ms (View: 23, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:35:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:36:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12ms (View: 3, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:40:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:46:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined method `email' for "example@railstutorial.org":String) on line #2 of app/views/users/show.html.erb:
+1: <h2>
+2:   <%= gravatar_for @user.email %> 
+3:   <%= h @user.name %>
+4: </h2>
+
+    app/views/users/show.html.erb:2
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:47:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:48:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined method `email' for "example@railstutorial.org":String) on line #2 of app/views/users/show.html.erb:
+1: <h2>
+2:   <%= gravatar_for "#{@user.email}" %> 
+3:   <%= h @user.name %>
+4: </h2>
+
+    app/views/users/show.html.erb:2
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (81.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:49:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined method `email' for "example@railstutorial.org":String) on line #3 of app/views/users/show.html.erb:
+1: <h2>
+2:   <% email = @user.email %>
+3:   <%= gravatar_for email %> 
+4:   <%= h @user.name %>
+5: </h2>
+
+    app/views/users/show.html.erb:3
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (33.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:49:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined method `email' for "example@railstutorial.org":String) on line #3 of app/views/users/show.html.erb:
+1: <h2>
+2:   <% email = @user.email %>
+3:   <%= gravatar_for email %> 
+4:   <%= h @user.name %>
+5: </h2>
+
+    app/views/users/show.html.erb:3
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:49:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:52:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 16:59:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 19ms (View: 7, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-08-17 16:59:14) [GET]
+  Parameters: {"rating"=>"PG", "size"=>"50) no-repeat", "titlealtdefault</div>"=>nil}
+
+ActionController::RoutingError (No route matches "/images/%3Cdiv%3EsslfalseclassgravatarratingPGstylewidth:50px;height:50px;background:url(http://www.gravatar.com/avatar/bebfcf57d6d8277d806a9ef3385c078d" with {:method=>:get}):
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 17:01:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined method `gravatar_url_for' for #<ActionView::Base:0x7f1ece558b08>) on line #5 of app/views/users/show.html.erb:
+2:   <tr>
+3:     <td class="main">
+4:       <h2>
+5:         <%= image_tag(gravatar_url_for @user.email) %> 
+6:         <%= h @user.name %>
+7:       </h2>
+8:     </td>
+
+    app/views/users/show.html.erb:5
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 17:01:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined method `gravatar_url_for' for #<ActionView::Base:0x7f1ece53c598>) on line #5 of app/views/users/show.html.erb:
+2:   <tr>
+3:     <td class="main">
+4:       <h2>
+5:         <%= image_tag(gravatar_url_for(@user.email)) %> 
+6:         <%= h @user.name %>
+7:       </h2>
+8:     </td>
+
+    app/views/users/show.html.erb:5
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/kevin/.rvm/rubies/ruby-1.8.7-p352/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (83.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 17:02:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/users/1]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example@example.com' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example@example.com' AND "users".id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example@example.com' AND "users".id <> 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2011-08-17 08:04:52', "email" = 'example@example.com', "encrypted_password" = '5645e143cbe83a6cc4cd111c57895d0ad6c950eeb4cb5650d10b4f7ee7216d6c', "salt" = '8abb9bc1f6ab4540f78eb513feec3ea7b758fd8f0293699e3de0750cbbadfc40' WHERE "id" = 1[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 17:05:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 13ms (View: 3, DB: 0) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-08-17 17:05:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 55ms (View: 4, DB: 0) | 200 OK [http://localhost/users/1]

@@ -93,9 +93,6 @@ module GravatarHelper
       end
     end
     
-    def gravatar_for(user, options={})
-      gravatar(user.email, options)
-    end
 
   end
   

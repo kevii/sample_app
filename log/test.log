@@ -2958,3 +2958,333 @@ WARNING: Can't mass-assign these protected attributes: password
   [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '37405f432c3ea74576c5550abe71c078197b3dd1664572dd7ccf0fdd120cd62d', '5aa37e0cd62c24bd926ce051349573934dbedbd7f2c2f4e3c5de0fa92289db5a', '2011-08-10 17:54:59', '2011-08-10 17:54:59', 'user@example.com')[0m
   [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
   [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '37405f432c3ea74576c5550abe71c078197b3dd1664572dd7ccf0fdd120cd62d', '5aa37e0cd62c24bd926ce051349573934dbedbd7f2c2f4e3c5de0fa92289db5a', '2011-08-10 17:54:59', '2011-08-10 17:54:59', 'user@example.com')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (3.5ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '7cfe038e2f9614fd7cd4758ace9d8bad2f43e4a2e37cb218f1eea28d75a18707', 'be55b9176902ec589739367f9cf3485c143705e70e0c82a22d99574a7f704d96', '2011-08-17 03:49:09', '2011-08-17 03:49:09', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 12:49:09) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 03:49:09", updated_at: "2011-08-17 03:49:09", encrypted_password: "7cfe038e2f9614fd7cd4758ace9d8bad2f43e4a2e37cb218f1e...", salt: "be55b9176902ec589739367f9cf3485c143705e70e0c82a22d9...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (45.9ms)
+Rendered layouts/_header (1.6ms)
+Rendered layouts/_footer (0.9ms)
+Completed in 91ms (View: 89, DB: 4) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '7cfe038e2f9614fd7cd4758ace9d8bad2f43e4a2e37cb218f1eea28d75a18707', 'be55b9176902ec589739367f9cf3485c143705e70e0c82a22d99574a7f704d96', '2011-08-17 03:49:09', '2011-08-17 03:49:09', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 12:49:09) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 03:49:09", updated_at: "2011-08-17 03:49:09", encrypted_password: "7cfe038e2f9614fd7cd4758ace9d8bad2f43e4a2e37cb218f1e...", salt: "be55b9176902ec589739367f9cf3485c143705e70e0c82a22d9...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 6ms (View: 6, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '7cfe038e2f9614fd7cd4758ace9d8bad2f43e4a2e37cb218f1eea28d75a18707', 'be55b9176902ec589739367f9cf3485c143705e70e0c82a22d99574a7f704d96', '2011-08-17 03:49:09', '2011-08-17 03:49:09', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 12:49:09) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 03:49:09", updated_at: "2011-08-17 03:49:09", encrypted_password: "7cfe038e2f9614fd7cd4758ace9d8bad2f43e4a2e37cb218f1e...", salt: "be55b9176902ec589739367f9cf3485c143705e70e0c82a22d9...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '7cfe038e2f9614fd7cd4758ace9d8bad2f43e4a2e37cb218f1eea28d75a18707', 'be55b9176902ec589739367f9cf3485c143705e70e0c82a22d99574a7f704d96', '2011-08-17 03:49:09', '2011-08-17 03:49:09', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 12:49:09) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 03:49:09", updated_at: "2011-08-17 03:49:09", encrypted_password: "7cfe038e2f9614fd7cd4758ace9d8bad2f43e4a2e37cb218f1e...", salt: "be55b9176902ec589739367f9cf3485c143705e70e0c82a22d9...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-17 12:49:09) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-17 12:49:09) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (9.6ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 60ms (View: 59, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '496f9c0735aaac4f8144cafcab63e7b34f7a7258479c8c612dc973c66bc485f9', '3051f46d117b9d91a2e4104f2415b2a6ad2c1882468091216e112946550afb61', '2011-08-17 07:23:13', '2011-08-17 07:23:13', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:23:13) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:23:13", updated_at: "2011-08-17 07:23:13", encrypted_password: "496f9c0735aaac4f8144cafcab63e7b34f7a7258479c8c612dc...", salt: "3051f46d117b9d91a2e4104f2415b2a6ad2c1882468091216e1...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (47.8ms)
+Rendered layouts/_header (1.7ms)
+Rendered layouts/_footer (0.8ms)
+Completed in 81ms (View: 78, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '496f9c0735aaac4f8144cafcab63e7b34f7a7258479c8c612dc973c66bc485f9', '3051f46d117b9d91a2e4104f2415b2a6ad2c1882468091216e112946550afb61', '2011-08-17 07:23:13', '2011-08-17 07:23:13', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:23:13) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:23:13", updated_at: "2011-08-17 07:23:13", encrypted_password: "496f9c0735aaac4f8144cafcab63e7b34f7a7258479c8c612dc...", salt: "3051f46d117b9d91a2e4104f2415b2a6ad2c1882468091216e1...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.6ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '496f9c0735aaac4f8144cafcab63e7b34f7a7258479c8c612dc973c66bc485f9', '3051f46d117b9d91a2e4104f2415b2a6ad2c1882468091216e112946550afb61', '2011-08-17 07:23:13', '2011-08-17 07:23:13', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:23:13) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:23:13", updated_at: "2011-08-17 07:23:13", encrypted_password: "496f9c0735aaac4f8144cafcab63e7b34f7a7258479c8c612dc...", salt: "3051f46d117b9d91a2e4104f2415b2a6ad2c1882468091216e1...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '496f9c0735aaac4f8144cafcab63e7b34f7a7258479c8c612dc973c66bc485f9', '3051f46d117b9d91a2e4104f2415b2a6ad2c1882468091216e112946550afb61', '2011-08-17 07:23:13', '2011-08-17 07:23:13', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:23:13) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:23:13", updated_at: "2011-08-17 07:23:13", encrypted_password: "496f9c0735aaac4f8144cafcab63e7b34f7a7258479c8c612dc...", salt: "3051f46d117b9d91a2e4104f2415b2a6ad2c1882468091216e1...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-17 16:23:13) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-17 16:23:13) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '46c6dc47fc967ca4419715c8a5bd8767e6713dca02e608fc60141394bfff1f5f', 'f196a0f6d15b8794d65bf5688f21fb096ec4ab5c737df91192028bbb8baf52dd', '2011-08-17 07:35:08', '2011-08-17 07:35:08', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:35:08) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:35:08", updated_at: "2011-08-17 07:35:08", encrypted_password: "46c6dc47fc967ca4419715c8a5bd8767e6713dca02e608fc601...", salt: "f196a0f6d15b8794d65bf5688f21fb096ec4ab5c737df911920...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 6ms (View: 5, DB: 1) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '46c6dc47fc967ca4419715c8a5bd8767e6713dca02e608fc60141394bfff1f5f', 'f196a0f6d15b8794d65bf5688f21fb096ec4ab5c737df91192028bbb8baf52dd', '2011-08-17 07:35:08', '2011-08-17 07:35:08', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:35:08) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:35:08", updated_at: "2011-08-17 07:35:08", encrypted_password: "46c6dc47fc967ca4419715c8a5bd8767e6713dca02e608fc601...", salt: "f196a0f6d15b8794d65bf5688f21fb096ec4ab5c737df911920...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '46c6dc47fc967ca4419715c8a5bd8767e6713dca02e608fc60141394bfff1f5f', 'f196a0f6d15b8794d65bf5688f21fb096ec4ab5c737df91192028bbb8baf52dd', '2011-08-17 07:35:08', '2011-08-17 07:35:08', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:35:08) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:35:08", updated_at: "2011-08-17 07:35:08", encrypted_password: "46c6dc47fc967ca4419715c8a5bd8767e6713dca02e608fc601...", salt: "f196a0f6d15b8794d65bf5688f21fb096ec4ab5c737df911920...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '46c6dc47fc967ca4419715c8a5bd8767e6713dca02e608fc60141394bfff1f5f', 'f196a0f6d15b8794d65bf5688f21fb096ec4ab5c737df91192028bbb8baf52dd', '2011-08-17 07:35:08', '2011-08-17 07:35:08', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:35:08) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:35:08", updated_at: "2011-08-17 07:35:08", encrypted_password: "46c6dc47fc967ca4419715c8a5bd8767e6713dca02e608fc601...", salt: "f196a0f6d15b8794d65bf5688f21fb096ec4ab5c737df911920...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-17 16:35:08) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-17 16:35:08) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', 'f7e8bca5f9c22faf49b4567ec5fdc98faa0308657a57610cb2e7b147ec973f5c', '25e2a18232b8ac18d75c9451b9c449a5abe1cb10367d909545a7fb6f60c427c7', '2011-08-17 07:42:35', '2011-08-17 07:42:35', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:42:35) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:42:35", updated_at: "2011-08-17 07:42:35", encrypted_password: "f7e8bca5f9c22faf49b4567ec5fdc98faa0308657a57610cb2e...", salt: "25e2a18232b8ac18d75c9451b9c449a5abe1cb10367d909545a...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', 'f7e8bca5f9c22faf49b4567ec5fdc98faa0308657a57610cb2e7b147ec973f5c', '25e2a18232b8ac18d75c9451b9c449a5abe1cb10367d909545a7fb6f60c427c7', '2011-08-17 07:42:35', '2011-08-17 07:42:35', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:42:35) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:42:35", updated_at: "2011-08-17 07:42:35", encrypted_password: "f7e8bca5f9c22faf49b4567ec5fdc98faa0308657a57610cb2e...", salt: "25e2a18232b8ac18d75c9451b9c449a5abe1cb10367d909545a...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', 'f7e8bca5f9c22faf49b4567ec5fdc98faa0308657a57610cb2e7b147ec973f5c', '25e2a18232b8ac18d75c9451b9c449a5abe1cb10367d909545a7fb6f60c427c7', '2011-08-17 07:42:35', '2011-08-17 07:42:35', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:42:35) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:42:35", updated_at: "2011-08-17 07:42:35", encrypted_password: "f7e8bca5f9c22faf49b4567ec5fdc98faa0308657a57610cb2e...", salt: "25e2a18232b8ac18d75c9451b9c449a5abe1cb10367d909545a...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', 'f7e8bca5f9c22faf49b4567ec5fdc98faa0308657a57610cb2e7b147ec973f5c', '25e2a18232b8ac18d75c9451b9c449a5abe1cb10367d909545a7fb6f60c427c7', '2011-08-17 07:42:35', '2011-08-17 07:42:35', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 16:42:35) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 07:42:35", updated_at: "2011-08-17 07:42:35", encrypted_password: "f7e8bca5f9c22faf49b4567ec5fdc98faa0308657a57610cb2e...", salt: "25e2a18232b8ac18d75c9451b9c449a5abe1cb10367d909545a...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-17 16:42:35) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-17 16:42:35) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', 'df8370e881fcd02776c4c5ffe271ede4ddf95de7282366e3312c41e9117e0aac', '699c7a7847ed468ee19ff3dfee1658fd29851f5bdc0120c0bb8eed8cf8a3f8ad', '2011-08-17 08:06:13', '2011-08-17 08:06:13', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 17:06:13) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 08:06:13", updated_at: "2011-08-17 08:06:13", encrypted_password: "df8370e881fcd02776c4c5ffe271ede4ddf95de7282366e3312...", salt: "699c7a7847ed468ee19ff3dfee1658fd29851f5bdc0120c0bb8...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', 'df8370e881fcd02776c4c5ffe271ede4ddf95de7282366e3312c41e9117e0aac', '699c7a7847ed468ee19ff3dfee1658fd29851f5bdc0120c0bb8eed8cf8a3f8ad', '2011-08-17 08:06:13', '2011-08-17 08:06:13', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 17:06:13) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 08:06:13", updated_at: "2011-08-17 08:06:13", encrypted_password: "df8370e881fcd02776c4c5ffe271ede4ddf95de7282366e3312...", salt: "699c7a7847ed468ee19ff3dfee1658fd29851f5bdc0120c0bb8...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', 'df8370e881fcd02776c4c5ffe271ede4ddf95de7282366e3312c41e9117e0aac', '699c7a7847ed468ee19ff3dfee1658fd29851f5bdc0120c0bb8eed8cf8a3f8ad', '2011-08-17 08:06:13', '2011-08-17 08:06:13', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 17:06:13) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 08:06:13", updated_at: "2011-08-17 08:06:13", encrypted_password: "df8370e881fcd02776c4c5ffe271ede4ddf95de7282366e3312...", salt: "699c7a7847ed468ee19ff3dfee1658fd29851f5bdc0120c0bb8...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/users/1]
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', 'df8370e881fcd02776c4c5ffe271ede4ddf95de7282366e3312c41e9117e0aac', '699c7a7847ed468ee19ff3dfee1658fd29851f5bdc0120c0bb8eed8cf8a3f8ad', '2011-08-17 08:06:13', '2011-08-17 08:06:13', 'mhartl@example.com')[0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2011-08-17 17:06:13) [GET]
+  Parameters: {"id"=>#<User id: 1, name: "Michael Hartl", email: "mhartl@example.com", created_at: "2011-08-17 08:06:13", updated_at: "2011-08-17 08:06:13", encrypted_password: "df8370e881fcd02776c4c5ffe271ede4ddf95de7282366e3312...", salt: "699c7a7847ed468ee19ff3dfee1658fd29851f5bdc0120c0bb8...">}
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/users/1]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-17 17:06:13) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
+
+
+Processing UsersController#new (for 0.0.0.0 at 2011-08-17 17:06:13) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/users/new]
