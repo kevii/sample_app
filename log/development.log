@@ -4037,3 +4037,29 @@ Rendered layouts/_stylesheets (0.4ms)
 Rendered layouts/_header (0.4ms)
 Rendered layouts/_footer (0.1ms)
 Completed in 21ms (View: 11, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20110808155604)
+Migrating to AddEmailUniquenessIndex (20110810070050)
+Migrating to AddPasswordToUsers (20110810091536)
+Migrating to AddSaltToUsers (20110810140933)
+Migrating to AddRememberTokenToUsers (20110819175145)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "users" ADD "remember_token" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110819175145')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_remember_token')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m

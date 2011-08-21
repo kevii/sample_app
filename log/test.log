@@ -3852,3 +3852,263 @@ Rendered layouts/_stylesheets (0.3ms)
 Rendered layouts/_header (0.6ms)
 Rendered layouts/_footer (0.2ms)
 Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/users/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '74ce0dc8b178cd88ba947e36d71fe7ebff324cc67e22eefd873d83f3e77cd759', 'aa2086ad357f50f480c020e581477030dac3f0ee36b68927ad43efc78ebd3a3d', '2011-08-19 17:57:16', '2011-08-19 17:57:16', 'mhartl@example.com')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2011-08-20 02:57:16) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"mhartl@example.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '74ce0dc8b178cd88ba947e36d71fe7ebff324cc67e22eefd873d83f3e77cd759', 'aa2086ad357f50f480c020e581477030dac3f0ee36b68927ad43efc78ebd3a3d', '2011-08-19 17:57:16', '2011-08-19 17:57:16', 'mhartl@example.com')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2011-08-20 02:57:16) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"mhartl@example.com"}, "action"=>"create", "controller"=>"sessions"}
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2011-08-20 02:57:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2011-08-20 02:57:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '99ba02e10358f2006e4da7325ea7e01e60e637678234e17e27c3175d1f068ed7', '51c3f0eb12c1cd4bf806719daec31921170ce63b78a4bc33b50be182cf82868e', '2011-08-19 17:58:58', '2011-08-19 17:58:58', 'mhartl@example.com')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2011-08-20 02:58:58) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"mhartl@example.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '99ba02e10358f2006e4da7325ea7e01e60e637678234e17e27c3175d1f068ed7', '51c3f0eb12c1cd4bf806719daec31921170ce63b78a4bc33b50be182cf82868e', '2011-08-19 17:58:58', '2011-08-19 17:58:58', 'mhartl@example.com')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2011-08-20 02:58:58) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"mhartl@example.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '99ba02e10358f2006e4da7325ea7e01e60e637678234e17e27c3175d1f068ed7', '51c3f0eb12c1cd4bf806719daec31921170ce63b78a4bc33b50be182cf82868e', '2011-08-19 17:58:58', '2011-08-19 17:58:58', 'mhartl@example.com')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2011-08-20 02:58:58) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"mhartl@example.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '99ba02e10358f2006e4da7325ea7e01e60e637678234e17e27c3175d1f068ed7', '51c3f0eb12c1cd4bf806719daec31921170ce63b78a4bc33b50be182cf82868e', '2011-08-19 17:58:58', '2011-08-19 17:58:58', 'mhartl@example.com')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2011-08-20 02:58:58) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"mhartl@example.com"}, "action"=>"create", "controller"=>"sessions"}
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2011-08-20 02:58:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.9ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 8ms (View: 7, DB: 1) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2011-08-20 02:58:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '43f5a4bb286341aca253dd99e45601587752e84a4689906ab9e71e65d9629ae6', '33479bf747a389d338b1ae3ef9ee3fe71c83d6b45c97dfe28e60e88b3c02a47a', '2011-08-19 18:02:29', '2011-08-19 18:02:29', 'mhartl@example.com')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2011-08-20 03:02:29) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"mhartl@example.com"}, "action"=>"create", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'mhartl@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Michael Hartl', '43f5a4bb286341aca253dd99e45601587752e84a4689906ab9e71e65d9629ae6', '33479bf747a389d338b1ae3ef9ee3fe71c83d6b45c97dfe28e60e88b3c02a47a', '2011-08-19 18:02:29', '2011-08-19 18:02:29', 'mhartl@example.com')[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2011-08-20 03:02:29) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"mhartl@example.com"}, "action"=>"create", "controller"=>"sessions"}
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2011-08-20 03:02:29) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 7ms (View: 7, DB: 1) | 200 OK [http://test.host/sessions?session%5Bemail%5D=email%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2011-08-20 03:02:29) [POST]
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}, "action"=>"create", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions?session%5Bemail%5D=email%40example.com&session%5Bpassword%5D=password]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2011-08-20 03:02:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/sessions/new]
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2011-08-20 03:02:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/sessions/new]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '1031755dba546f4364ab8470a60c27be2f62b67175c76f37ac238269cd8d2d67', '6a3f6c13097b516720ba5a258a6fc3206ea2fdf23425806a29e37b2bbfc0a211', '2011-08-19 18:04:13', '2011-08-19 18:04:13', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '1031755dba546f4364ab8470a60c27be2f62b67175c76f37ac238269cd8d2d67', '6a3f6c13097b516720ba5a258a6fc3206ea2fdf23425806a29e37b2bbfc0a211', '2011-08-19 18:04:13', '2011-08-19 18:04:13', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '1031755dba546f4364ab8470a60c27be2f62b67175c76f37ac238269cd8d2d67', '6a3f6c13097b516720ba5a258a6fc3206ea2fdf23425806a29e37b2bbfc0a211', '2011-08-19 18:04:13', '2011-08-19 18:04:13', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '1031755dba546f4364ab8470a60c27be2f62b67175c76f37ac238269cd8d2d67', '6a3f6c13097b516720ba5a258a6fc3206ea2fdf23425806a29e37b2bbfc0a211', '2011-08-19 18:04:13', '2011-08-19 18:04:13', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '1031755dba546f4364ab8470a60c27be2f62b67175c76f37ac238269cd8d2d67', '6a3f6c13097b516720ba5a258a6fc3206ea2fdf23425806a29e37b2bbfc0a211', '2011-08-19 18:04:13', '2011-08-19 18:04:13', 'user@example.com')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '1031755dba546f4364ab8470a60c27be2f62b67175c76f37ac238269cd8d2d67', '6a3f6c13097b516720ba5a258a6fc3206ea2fdf23425806a29e37b2bbfc0a211', '2011-08-19 18:04:13', '2011-08-19 18:04:13', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '1031755dba546f4364ab8470a60c27be2f62b67175c76f37ac238269cd8d2d67', '6a3f6c13097b516720ba5a258a6fc3206ea2fdf23425806a29e37b2bbfc0a211', '2011-08-19 18:04:13', '2011-08-19 18:04:13', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '1031755dba546f4364ab8470a60c27be2f62b67175c76f37ac238269cd8d2d67', '6a3f6c13097b516720ba5a258a6fc3206ea2fdf23425806a29e37b2bbfc0a211', '2011-08-19 18:04:13', '2011-08-19 18:04:13', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '1031755dba546f4364ab8470a60c27be2f62b67175c76f37ac238269cd8d2d67', '6a3f6c13097b516720ba5a258a6fc3206ea2fdf23425806a29e37b2bbfc0a211', '2011-08-19 18:04:13', '2011-08-19 18:04:13', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '1031755dba546f4364ab8470a60c27be2f62b67175c76f37ac238269cd8d2d67', '6a3f6c13097b516720ba5a258a6fc3206ea2fdf23425806a29e37b2bbfc0a211', '2011-08-19 18:04:13', '2011-08-19 18:04:13', 'user@example.com')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '068cbd3f5a58fe22a5c5d1514e94ed94c544bb4af77b203f6725dfb16c1714c9', '4dca694740daf18e1894e0f97afd0910bcc099c177ae961c5f0611747ba019dc', '2011-08-19 18:09:17', '2011-08-19 18:09:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '068cbd3f5a58fe22a5c5d1514e94ed94c544bb4af77b203f6725dfb16c1714c9', '4dca694740daf18e1894e0f97afd0910bcc099c177ae961c5f0611747ba019dc', '2011-08-19 18:09:17', '2011-08-19 18:09:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '068cbd3f5a58fe22a5c5d1514e94ed94c544bb4af77b203f6725dfb16c1714c9', '4dca694740daf18e1894e0f97afd0910bcc099c177ae961c5f0611747ba019dc', '2011-08-19 18:09:17', '2011-08-19 18:09:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '068cbd3f5a58fe22a5c5d1514e94ed94c544bb4af77b203f6725dfb16c1714c9', '4dca694740daf18e1894e0f97afd0910bcc099c177ae961c5f0611747ba019dc', '2011-08-19 18:09:17', '2011-08-19 18:09:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '068cbd3f5a58fe22a5c5d1514e94ed94c544bb4af77b203f6725dfb16c1714c9', '4dca694740daf18e1894e0f97afd0910bcc099c177ae961c5f0611747ba019dc', '2011-08-19 18:09:17', '2011-08-19 18:09:17', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '068cbd3f5a58fe22a5c5d1514e94ed94c544bb4af77b203f6725dfb16c1714c9', '4dca694740daf18e1894e0f97afd0910bcc099c177ae961c5f0611747ba019dc', '2011-08-19 18:09:17', '2011-08-19 18:09:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '068cbd3f5a58fe22a5c5d1514e94ed94c544bb4af77b203f6725dfb16c1714c9', '4dca694740daf18e1894e0f97afd0910bcc099c177ae961c5f0611747ba019dc', '2011-08-19 18:09:17', '2011-08-19 18:09:17', 'user@example.com')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '068cbd3f5a58fe22a5c5d1514e94ed94c544bb4af77b203f6725dfb16c1714c9', '4dca694740daf18e1894e0f97afd0910bcc099c177ae961c5f0611747ba019dc', '2011-08-19 18:09:17', '2011-08-19 18:09:17', 'user@example.com')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '068cbd3f5a58fe22a5c5d1514e94ed94c544bb4af77b203f6725dfb16c1714c9', '4dca694740daf18e1894e0f97afd0910bcc099c177ae961c5f0611747ba019dc', '2011-08-19 18:09:17', '2011-08-19 18:09:17', 'user@example.com')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '068cbd3f5a58fe22a5c5d1514e94ed94c544bb4af77b203f6725dfb16c1714c9', '4dca694740daf18e1894e0f97afd0910bcc099c177ae961c5f0611747ba019dc', '2011-08-19 18:09:17', '2011-08-19 18:09:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'cb9b32ab98c9f544edb0958a57ce40e11746bae7418e5563d6f904998f6bfdb9', '8e1d5f00b9bf74dab6533ee3e0cab05439c3b2a4b07981449c19661d7eb2ee07', '2011-08-19 18:11:50', '2011-08-19 18:11:50', 'user@example.com')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'cb9b32ab98c9f544edb0958a57ce40e11746bae7418e5563d6f904998f6bfdb9', '8e1d5f00b9bf74dab6533ee3e0cab05439c3b2a4b07981449c19661d7eb2ee07', '2011-08-19 18:11:50', '2011-08-19 18:11:50', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'cb9b32ab98c9f544edb0958a57ce40e11746bae7418e5563d6f904998f6bfdb9', '8e1d5f00b9bf74dab6533ee3e0cab05439c3b2a4b07981449c19661d7eb2ee07', '2011-08-19 18:11:50', '2011-08-19 18:11:50', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'cb9b32ab98c9f544edb0958a57ce40e11746bae7418e5563d6f904998f6bfdb9', '8e1d5f00b9bf74dab6533ee3e0cab05439c3b2a4b07981449c19661d7eb2ee07', '2011-08-19 18:11:50', '2011-08-19 18:11:50', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'cb9b32ab98c9f544edb0958a57ce40e11746bae7418e5563d6f904998f6bfdb9', '8e1d5f00b9bf74dab6533ee3e0cab05439c3b2a4b07981449c19661d7eb2ee07', '2011-08-19 18:11:50', '2011-08-19 18:11:50', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'cb9b32ab98c9f544edb0958a57ce40e11746bae7418e5563d6f904998f6bfdb9', '8e1d5f00b9bf74dab6533ee3e0cab05439c3b2a4b07981449c19661d7eb2ee07', '2011-08-19 18:11:50', '2011-08-19 18:11:50', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'cb9b32ab98c9f544edb0958a57ce40e11746bae7418e5563d6f904998f6bfdb9', '8e1d5f00b9bf74dab6533ee3e0cab05439c3b2a4b07981449c19661d7eb2ee07', '2011-08-19 18:11:50', '2011-08-19 18:11:50', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'cb9b32ab98c9f544edb0958a57ce40e11746bae7418e5563d6f904998f6bfdb9', '8e1d5f00b9bf74dab6533ee3e0cab05439c3b2a4b07981449c19661d7eb2ee07', '2011-08-19 18:11:50', '2011-08-19 18:11:50', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'cb9b32ab98c9f544edb0958a57ce40e11746bae7418e5563d6f904998f6bfdb9', '8e1d5f00b9bf74dab6533ee3e0cab05439c3b2a4b07981449c19661d7eb2ee07', '2011-08-19 18:11:50', '2011-08-19 18:11:50', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'cb9b32ab98c9f544edb0958a57ce40e11746bae7418e5563d6f904998f6bfdb9', '8e1d5f00b9bf74dab6533ee3e0cab05439c3b2a4b07981449c19661d7eb2ee07', '2011-08-19 18:11:50', '2011-08-19 18:11:50', 'user@example.com')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'd2bdc3753aac1990df0351f162fa5387f3d04f45035aa09e48ae89fcac970da0', 'd9f2846a28a2644eaec5f8370efc4b19d585e0bc113e43bc763fd7b860d88f89', '2011-08-19 18:14:06', '2011-08-19 18:14:06', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'd2bdc3753aac1990df0351f162fa5387f3d04f45035aa09e48ae89fcac970da0', 'd9f2846a28a2644eaec5f8370efc4b19d585e0bc113e43bc763fd7b860d88f89', '2011-08-19 18:14:06', '2011-08-19 18:14:06', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'd2bdc3753aac1990df0351f162fa5387f3d04f45035aa09e48ae89fcac970da0', 'd9f2846a28a2644eaec5f8370efc4b19d585e0bc113e43bc763fd7b860d88f89', '2011-08-19 18:14:06', '2011-08-19 18:14:06', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'd2bdc3753aac1990df0351f162fa5387f3d04f45035aa09e48ae89fcac970da0', 'd9f2846a28a2644eaec5f8370efc4b19d585e0bc113e43bc763fd7b860d88f89', '2011-08-19 18:14:06', '2011-08-19 18:14:06', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'd2bdc3753aac1990df0351f162fa5387f3d04f45035aa09e48ae89fcac970da0', 'd9f2846a28a2644eaec5f8370efc4b19d585e0bc113e43bc763fd7b860d88f89', '2011-08-19 18:14:06', '2011-08-19 18:14:06', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'd2bdc3753aac1990df0351f162fa5387f3d04f45035aa09e48ae89fcac970da0', 'd9f2846a28a2644eaec5f8370efc4b19d585e0bc113e43bc763fd7b860d88f89', '2011-08-19 18:14:06', '2011-08-19 18:14:06', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'd2bdc3753aac1990df0351f162fa5387f3d04f45035aa09e48ae89fcac970da0', 'd9f2846a28a2644eaec5f8370efc4b19d585e0bc113e43bc763fd7b860d88f89', '2011-08-19 18:14:06', '2011-08-19 18:14:06', 'user@example.com')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'da45c51b1d7ea05fa720103f1582aa8241c656c23f5cede47b6cde3130a3e6e9', '6f05daa8e2581bd7305658effa4cbc7f92f1399b6b4c2f94efa10f09ef0ba979', '2011-08-19 18:15:17', '2011-08-19 18:15:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'da45c51b1d7ea05fa720103f1582aa8241c656c23f5cede47b6cde3130a3e6e9', '6f05daa8e2581bd7305658effa4cbc7f92f1399b6b4c2f94efa10f09ef0ba979', '2011-08-19 18:15:17', '2011-08-19 18:15:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'da45c51b1d7ea05fa720103f1582aa8241c656c23f5cede47b6cde3130a3e6e9', '6f05daa8e2581bd7305658effa4cbc7f92f1399b6b4c2f94efa10f09ef0ba979', '2011-08-19 18:15:17', '2011-08-19 18:15:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'da45c51b1d7ea05fa720103f1582aa8241c656c23f5cede47b6cde3130a3e6e9', '6f05daa8e2581bd7305658effa4cbc7f92f1399b6b4c2f94efa10f09ef0ba979', '2011-08-19 18:15:17', '2011-08-19 18:15:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'da45c51b1d7ea05fa720103f1582aa8241c656c23f5cede47b6cde3130a3e6e9', '6f05daa8e2581bd7305658effa4cbc7f92f1399b6b4c2f94efa10f09ef0ba979', '2011-08-19 18:15:17', '2011-08-19 18:15:17', 'user@example.com')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'da45c51b1d7ea05fa720103f1582aa8241c656c23f5cede47b6cde3130a3e6e9', '6f05daa8e2581bd7305658effa4cbc7f92f1399b6b4c2f94efa10f09ef0ba979', '2011-08-19 18:15:17', '2011-08-19 18:15:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'da45c51b1d7ea05fa720103f1582aa8241c656c23f5cede47b6cde3130a3e6e9', '6f05daa8e2581bd7305658effa4cbc7f92f1399b6b4c2f94efa10f09ef0ba979', '2011-08-19 18:15:17', '2011-08-19 18:15:17', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'da45c51b1d7ea05fa720103f1582aa8241c656c23f5cede47b6cde3130a3e6e9', '6f05daa8e2581bd7305658effa4cbc7f92f1399b6b4c2f94efa10f09ef0ba979', '2011-08-19 18:15:17', '2011-08-19 18:15:17', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'da45c51b1d7ea05fa720103f1582aa8241c656c23f5cede47b6cde3130a3e6e9', '6f05daa8e2581bd7305658effa4cbc7f92f1399b6b4c2f94efa10f09ef0ba979', '2011-08-19 18:15:17', '2011-08-19 18:15:17', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', 'da45c51b1d7ea05fa720103f1582aa8241c656c23f5cede47b6cde3130a3e6e9', '6f05daa8e2581bd7305658effa4cbc7f92f1399b6b4c2f94efa10f09ef0ba979', '2011-08-19 18:15:17', '2011-08-19 18:15:17', 'user@example.com')[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '83a537baa8343c7390dbdd76a29203941bbce945cb28ae4b918ea5ff75775e1e', 'd3e2c1e32bbc2a8ddd14becf3d5c6981828c5e9f85d1ec35db36488962a0db66', '2011-08-19 18:15:24', '2011-08-19 18:15:24', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '83a537baa8343c7390dbdd76a29203941bbce945cb28ae4b918ea5ff75775e1e', 'd3e2c1e32bbc2a8ddd14becf3d5c6981828c5e9f85d1ec35db36488962a0db66', '2011-08-19 18:15:24', '2011-08-19 18:15:24', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.1ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '83a537baa8343c7390dbdd76a29203941bbce945cb28ae4b918ea5ff75775e1e', 'd3e2c1e32bbc2a8ddd14becf3d5c6981828c5e9f85d1ec35db36488962a0db66', '2011-08-19 18:15:24', '2011-08-19 18:15:24', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '83a537baa8343c7390dbdd76a29203941bbce945cb28ae4b918ea5ff75775e1e', 'd3e2c1e32bbc2a8ddd14becf3d5c6981828c5e9f85d1ec35db36488962a0db66', '2011-08-19 18:15:24', '2011-08-19 18:15:24', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '83a537baa8343c7390dbdd76a29203941bbce945cb28ae4b918ea5ff75775e1e', 'd3e2c1e32bbc2a8ddd14becf3d5c6981828c5e9f85d1ec35db36488962a0db66', '2011-08-19 18:15:24', '2011-08-19 18:15:24', 'user@example.com')[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'bar@foo.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.2ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '83a537baa8343c7390dbdd76a29203941bbce945cb28ae4b918ea5ff75775e1e', 'd3e2c1e32bbc2a8ddd14becf3d5c6981828c5e9f85d1ec35db36488962a0db66', '2011-08-19 18:15:24', '2011-08-19 18:15:24', 'user@example.com')[0m
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'user@example.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '83a537baa8343c7390dbdd76a29203941bbce945cb28ae4b918ea5ff75775e1e', 'd3e2c1e32bbc2a8ddd14becf3d5c6981828c5e9f85d1ec35db36488962a0db66', '2011-08-19 18:15:24', '2011-08-19 18:15:24', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '83a537baa8343c7390dbdd76a29203941bbce945cb28ae4b918ea5ff75775e1e', 'd3e2c1e32bbc2a8ddd14becf3d5c6981828c5e9f85d1ec35db36488962a0db66', '2011-08-19 18:15:24', '2011-08-19 18:15:24', 'user@example.com')[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.2ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '83a537baa8343c7390dbdd76a29203941bbce945cb28ae4b918ea5ff75775e1e', 'd3e2c1e32bbc2a8ddd14becf3d5c6981828c5e9f85d1ec35db36488962a0db66', '2011-08-19 18:15:24', '2011-08-19 18:15:24', 'user@example.com')[0m
+  [4;35;1mUser Load (0.1ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'user@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.1ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "email") VALUES('Example User', '83a537baa8343c7390dbdd76a29203941bbce945cb28ae4b918ea5ff75775e1e', 'd3e2c1e32bbc2a8ddd14becf3d5c6981828c5e9f85d1ec35db36488962a0db66', '2011-08-19 18:15:24', '2011-08-19 18:15:24', 'user@example.com')[0m
