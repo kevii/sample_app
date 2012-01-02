@@ -52,6 +52,8 @@ ActionController::Routing::Routes.draw do |map|
   map.signup  'signup',   :controller => 'users', :action => 'new'
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-
+  
+#  root_path => '/' 
+#  root_url  => 'http://localhost:3000/'
 
 end
