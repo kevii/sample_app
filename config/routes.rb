@@ -41,6 +41,7 @@ ActionController::Routing::Routes.draw do |map|
  
   map.resources :users  
   map.resources :sessions, :only => [:new, :create, :destroy]
+  map.resources :microposts, :only => [:create, :destroy]
    
   map.signin  '/signin',  :controller => 'sessions', :action => 'new'
   map.signout '/signout', :controller => 'sessions', :action => 'destroy'
@@ -53,7 +54,5 @@ ActionController::Routing::Routes.draw do |map|
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   
-#  root_path => '/' 
-#  root_url  => 'http://localhost:3000/'
 
 end
