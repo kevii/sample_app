@@ -1,0 +1,11 @@
+Script started on Tue 10 Jan 2012 06:32:46 PM JST
+]0;kevin@KEVIN-T410: ~/Applications/rails2/sample_appkevin@KEVIN-T410:~/Applications/rails2/sample_app$ exit/con[K[K[K[K[K[K[K[Kvim spec/models/micropost_specc.rb [A]0;kevin@KEVIN-T410: ~/Applications/rails2/sample_appkevin@KEVIN-T410:~/Applications/rails2/sample_app$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kcr[K[Kscript/console 
+Loading development environment (Rails 2.3.5)
+>> User.all.count
+=> 99
+>> exit
+]0;kevin@KEVIN-T410: ~/Applications/rails2/sample_appkevin@KEVIN-T410:~/Applications/rails2/sample_app$ eix[K[Kxit
+exit
+
+Script done on Tue 10 Jan 2012 06:33:11 PM JST
